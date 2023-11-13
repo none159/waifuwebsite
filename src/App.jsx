@@ -12,10 +12,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/waifuwebsite/' element={<Page />} />
-        <Route path='/waifuwebsite/sourcecode' element={<Sourcecode />} />
-        <Route path='/waifuwebsite/uses' element={<Uses />} />
-        <Route path='/waifuwebsite/contact' element={<Contact />} />
+        <Route path='./waifuwebsite/' element={<Page />} />
+        <Route path='./waifuwebsite/sourcecode' element={<Sourcecode />} />
+        <Route path='./waifuwebsite/uses' element={<Uses />} />
+        <Route path='./waifuwebsite/contact' element={<Contact />} />
 
       </Routes>
     </BrowserRouter>
