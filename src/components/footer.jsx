@@ -14,10 +14,10 @@ class Footer extends Component {
                         <img className='waifuimg' src={waifu1}></img>
                     </div>
                     <div>
-                        <Link to='/waifutrade'><a>Home</a></Link>
-                        <Link to='/waifutrade/sourcecode'><a>Source Code</a></Link>
-                        <Link to='/waifutrade/uses'><a>How to use?</a></Link>
-                        <Link to='/waifutrade/contact'><a>Contact</a></Link>
+                        <Link to='/waifuwebsite/'><a>Home</a></Link>
+                        <Link to='/waifuwebsite/sourcecode'><a>Source Code</a></Link>
+                        <Link to='/waifuwebsite/uses'><a>How to use?</a></Link>
+                        <Link to='/waifuwebsite/contact'><a>Contact</a></Link>
                     </div>
                     <div>
                         <h3>Support</h3>

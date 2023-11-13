@@ -10,17 +10,17 @@ class Nav extends Component {
                 <div className='navbar-container'>
                     <ul className='homeicon'>
                         <li>
-                            <Link to='/waifutrade'><a><i className="fa fa-home" aria-hidden="true"></i><br />Home</a></Link>
+                            <Link to='/waifuwebsite/'><a><i className="fa fa-home" aria-hidden="true"></i><br />Home</a></Link>
                         </li>
                     </ul>
                     <ul className='downloadicon'>
                         <li>
-                            <Link to='/waifutrade/sourcecode'><a><i className="fa fa-download" aria-hidden="true"></i><br />Source Code</a></Link>
+                            <Link to='/waifuwebsite/sourcecode'><a><i className="fa fa-download" aria-hidden="true"></i><br />Source Code</a></Link>
                         </li>
                     </ul>
                     <ul className='useicon'>
                         <li>
-                            <Link to='/waifutrade/uses'><a><i className="fa fa-question-circle" aria-hidden="true"></i><br />How to use?</a></Link>
+                            <Link to='/waifuwebsite/uses'><a><i className="fa fa-question-circle" aria-hidden="true"></i><br />How to use?</a></Link>
                         </li>
                     </ul>
                 </div>
