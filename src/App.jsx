@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='./waifutrade/'>
       <Routes>
         <Route path='./waifuwebsite/' element={<Page />} />
         <Route path='./waifuwebsite/sourcecode' element={<Sourcecode />} />
