@@ -1,0 +1,716 @@
+:root {
+  padding: 0;
+  margin: 0;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 50px;
+  margin-left: -125px;
+  z-index: 2;
+  padding: 5px;
+  background-color: rgba(76, 76, 219, 0.425);
+  width: fit-content;
+  border-radius: .5em;
+  transition: 350ms ease-in-out;
+}
+
+.arrow-right {
+  position: relative;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgba(76, 76, 219, 0.425);
+}
+
+.navbar:hover {
+  margin-left: -10px;
+}
+
+.navbar-container {
+  display: grid;
+  justify-content: left;
+  text-align: left;
+
+}
+
+.navbar-container ul {
+  display: grid;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.navbar-container ul li {
+
+  list-style: none;
+}
+
+.navbar-container ul li a {
+  display: grid;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  user-select: none;
+  font-weight: 300;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.navbar-container ul li a:hover {
+  color: royalblue;
+
+}
+
+.hero-sec .hero-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 400px;
+}
+
+.hero-sec .hero-container .topsection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.hero-sec .hero-container .topsection div {
+  position: relative;
+  top: 50px;
+}
+
+.hero-sec .hero-container .topsection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  left: 0;
+  background-image: url('./images/waifus.jpeg');
+  filter: blur(7px) brightness(50%);
+
+}
+
+.hero-sec .hero-container .topsection .left-topsection {
+  display: grid;
+  place-items: center;
+}
+
+.hero-sec .hero-container .topsection .left-topsection .waifuimg {
+  height: 400px;
+  width: 700px;
+  transition: 350ms ease-in-out;
+}
+
+.hero-sec .hero-container .topsection .left-topsection .waifuimg:hover {
+  transform: scale(1.01);
+}
+
+.hero-sec .hero-container .topsection .left-topsection h4 {
+  position: relative;
+  top: -50px;
+  font-size: 5px;
+}
+
+.hero-sec .hero-container .topsection .right-topsection {
+  display: grid;
+  place-items: center;
+  gap: 15px;
+  margin-right: 45px;
+}
+
+.hero-sec .hero-container .topsection .right-topsection h2 {
+  color: rgb(76, 76, 219);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 300;
+  border: 2px solid rgb(76, 76, 219);
+  padding: 10px;
+}
+
+.hero-sec .hero-container .topsection .right-topsection h3 {
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: 300;
+}
+
+.hero-sec .hero-container .topsection .right-topsection a {
+  font-weight: 300;
+  font-size: larger;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 10em;
+  height: 1em;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #111;
+  padding: .9em 1em;
+  background: rgb(255 255 255);
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 300ms ease-in-out;
+}
+
+.hero-sec .hero-container .topsection .right-topsection a:hover {
+  width: 11em;
+  height: 1.5em;
+  color: rgb(255 255 255);
+  background: #111;
+}
+
+.hero-sec .hero-container .topsection .right-topsection a::before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.hero-sec .hero-container .topsection .right-topsection a::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255 255 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+
+.hero-sec .hero-container .topsection .right-topsection a:hover::after {
+  background-color: #222;
+}
+
+
+.hero-sec .hero-container .about-bot {
+  display: grid;
+  gap: 10px;
+  margin: 20px;
+}
+
+.hero-sec .hero-container .about-bot h2,
+.hero-sec .hero-container .about-bot span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: xx-large;
+
+}
+
+.hero-sec .hero-container .about-bot h2 {
+  color: rgba(255, 255, 255, 0.87);
+  border-bottom: 1px solid rgb(76, 76, 219);
+  padding: 30px;
+  box-shadow: inset 0 -10px 10px -10px rgb(76, 76, 219);
+}
+
+.hero-sec .hero-container .about-bot span {
+  color: rgb(76, 76, 219);
+}
+
+.hero-sec .hero-container .about-bot h3 {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 35px;
+  font-family: sans-serif;
+  font-weight: 300;
+
+}
+
+
+
+.hero-sec .hero-container .featuresbox {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hero-sec .hero-container .featuresbox h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 300;
+  color: rgb(255 255 255);
+  transform: translateY(0%);
+  animation: animate alternate 500ms ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.hero-sec .hero-container .featuresbox .features {
+  display: flex;
+  justify-content: space-between;
+  gap: 70vh;
+}
+
+.hero-sec .hero-container .featuresbox .features div {
+  display: grid;
+  text-align: justify;
+  text-justify: inter-word;
+  gap: 15px;
+}
+
+.hero-sec .hero-container .featuresbox .features div h3 {
+  font-weight: 300;
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+.footer {
+  position: relative;
+  top: 30vh;
+  background-color: #222222;
+}
+
+.footer .footer-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px black;
+
+
+}
+
+.footer .footer-container div {
+  position: relative;
+  display: grid;
+  gap: 50px;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  left: -20px;
+  padding: 20px 20px 20px 30px;
+  margin: 20px 20px 20px 30px;
+}
+
+.footer .footer-container div a {
+  user-select: none;
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+}
+
+.footer .footer-container div h3 {
+  background-color: #242424;
+  box-shadow: 0 0 10px black;
+  padding: 15px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 300;
+  user-select: none;
+  border-radius: .3em;
+  transition: 250ms ease-in-out;
+}
+
+.footer .footer-container div h3:hover {
+  transform: scale(1.1);
+  color: rgb(76, 76, 219);
+}
+
+.footer .footer-container div a:hover {
+  color: rgb(76, 76, 219);
+  text-decoration: underline;
+}
+
+.footer .footer-container div img {
+  transition: 350ms ease-in-out;
+  cursor: default;
+}
+
+.footer .footer-container div img:hover {
+  transform: scale(1.01);
+}
+
+.uses-sec {
+  margin-bottom: 200px;
+}
+
+.uses-sec .uses-container {
+  position: relative;
+  display: grid;
+  gap: 50px;
+  top: 100px;
+  margin: 50px;
+}
+
+.uses-sec .uses-container .uses-title {
+  display: grid;
+}
+
+.uses-sec .uses-container .uses-title h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 300;
+  font-size: xx-large;
+  color: rgb(76, 76, 219);
+  border-bottom: 1px solid rgb(76, 76, 219);
+  padding: 5px;
+  width: fit-content;
+}
+
+.uses-sec .uses-container .uses-title h3 {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: x-large;
+}
+
+.uses-sec .uses-container .uses-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.uses-sec .uses-container .uses-nav a {
+  position: relative;
+  font-family: sans-serif;
+  font-size: x-large;
+  border-bottom: 1px solid transparent;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255 255 255);
+  padding: 10px;
+  transition: 250ms ease-in-out;
+}
+
+.uses-sec .uses-container .uses-nav a:hover {
+  border-color: rgb(255 255 255);
+}
+
+.uses-sec .uses-container .uses-rules {
+  display: grid;
+  position: relative;
+  top: 200px;
+}
+
+.uses-sec .uses-container .uses-rules h2 {
+  color: rgb(76, 76, 219);
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.uses-sec .uses-container .uses-rules h3 {
+  color: rgb(255 255 255);
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.commands {
+  display: grid;
+  gap: 30px;
+}
+
+.commands div {
+  display: grid;
+  gap: 10px;
+}
+
+.commands div h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  box-shadow: 0 0 10px black;
+  border-radius: .3em;
+  width: fit-content;
+  padding: 10px 100px 10px 10px;
+  color: rgb(76, 76, 219);
+}
+
+.commands div h3 {
+  font-family: sans-serif;
+  font-weight: 300;
+  color: rgb(255 255 255);
+}
+
+.source-sec {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+  margin: 200px 50px;
+}
+
+.source-sec .source-container .source-title h2 {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #2f0959 67%,
+      #1b0334 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.source-sec .source-container a {
+  text-decoration: none;
+}
+
+.source-sec .source-container a .repbox {
+  position: relative;
+  top: 200px;
+  cursor: pointer;
+  border-radius: .5em;
+  margin: 0 auto;
+  background-color: #222222;
+  box-shadow: 0 0 10px black;
+  width: fit-content;
+  padding: 15px;
+  transition: 350ms ease-in-out;
+
+}
+
+
+
+.source-sec .source-container a .repbox img {
+  width: 350px;
+  border: 3px solid rgb(76, 76, 219);
+  border-radius: .5em;
+  height: 500px;
+  filter: blur(5px) brightness(50%);
+  transition: 350ms ease-in-out;
+}
+
+.source-sec .source-container a .repbox:hover {
+  padding: 20px;
+  box-shadow: 0 0 15px black;
+}
+
+.source-sec .source-container a .repbox:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgb(76, 76, 219);
+  filter: blur(0) brightness(100%);
+}
+
+
+.source-sec .source-container a .repbox h2 {
+  color: rgb(76, 76, 219);
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 350ms ease-in-out;
+}
+
+.source-sec .source-container .disclaimer {
+  position: relative;
+  margin: 50px;
+  display: grid;
+  place-items: left;
+  text-align: center;
+  top: 200px;
+}
+
+.source-sec .source-container .disclaimer h2 {
+  color: rgb(76, 76, 219);
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.source-sec .source-container .disclaimer h3 {
+  color: rgb(255 255 255);
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.source-sec .source-container .disclaimer h3 span {
+  color: rgb(76, 76, 219);
+}
+
+.contact-sec {
+  position: relative;
+  top: 150px;
+}
+
+.contact-sec .contact-container {
+  display: grid;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  gap: 70px;
+}
+
+.contact-sec .contact-container .contacttitle {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  width: fit-content;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 3px rgb(76, 76, 219), 0 0 10px black;
+  color: rgba(76, 76, 219, 0.425);
+  border: 1px solid rgb(76, 76, 219);
+}
+
+.contact-sec .contact-container form {
+  display: grid;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  gap: 10Px;
+}
+
+.contact-sec .contact-container form h2 {
+  color: rgb(76, 76, 219);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: x-large;
+}
+
+.contact-sec .contact-container form input {
+  border: 1px solid transparent;
+  outline: none;
+  padding: 10px 50px;
+  border-radius: .3em;
+  box-shadow: 0 0 10px black;
+  transition: 350ms ease-in-out;
+}
+
+
+.contact-sec .contact-container form input:focus {
+  border: 1px solid rgb(76, 76, 219);
+}
+
+.contact-sec .contact-container form textarea {
+  outline: none;
+  border: 1px solid transparent;
+  width: 500px;
+  height: 300px;
+  border-radius: .5em;
+  box-shadow: 0 0 10px black;
+  transition: 350ms ease-in-out;
+}
+
+.contact-sec .contact-container form textarea:focus {
+  border: 1px solid rgb(76, 76, 219);
+}
+
+.contact-sec .contact-container form button {
+  width: fit-content;
+  margin: 50px auto;
+  border: none;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.87);
+  color: rgb(76, 76, 219);
+  border-radius: .3em;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: medium;
+  box-shadow: 0 0 10px black;
+  transition: 350ms ease-in-out;
+
+}
+
+.contact-sec .contact-container form button:hover {
+  border-radius: .5em;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(76, 76, 219);
+}
+
+@media (max-width:950px) {
+  .hero-sec .hero-container .topsection {
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+  .hero-sec .hero-container .topsection div {
+    top: -50px;
+  }
+
+  .hero-sec .hero-container .featuresbox {
+    gap: 0;
+  }
+
+  .hero-sec .hero-container .featuresbox .features {
+    display: grid;
+
+    gap: 10px;
+  }
+
+  .footer .footer-container {
+    display: grid;
+    place-content: center;
+  }
+}
