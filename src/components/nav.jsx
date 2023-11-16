@@ -15,12 +15,12 @@ class Nav extends Component {
                     </ul>
                     <ul className='downloadicon'>
                         <li>
-                            <Link to='/waifuwebsite/sourcecode'><a><i className="fa fa-download" aria-hidden="true"></i><br />Source Code</a></Link>
+                            <Link to='/sourcecode'><a><i className="fa fa-download" aria-hidden="true"></i><br />Source Code</a></Link>
                         </li>
                     </ul>
                     <ul className='useicon'>
                         <li>
-                            <Link to='/waifuwebsite/uses'><a><i className="fa fa-question-circle" aria-hidden="true"></i><br />How to use?</a></Link>
+                            <Link to='/uses'><a><i className="fa fa-question-circle" aria-hidden="true"></i><br />How to use?</a></Link>
                         </li>
                     </ul>
                 </div>

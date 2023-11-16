@@ -15,9 +15,9 @@ class Footer extends Component {
                     </div>
                     <div>
                         <Link to='/waifuwebsite/'><a>Home</a></Link>
-                        <Link to='/waifuwebsite/sourcecode'><a>Source Code</a></Link>
-                        <Link to='/waifuwebsite/uses'><a>How to use?</a></Link>
-                        <Link to='/waifuwebsite/contact'><a>Contact</a></Link>
+                        <Link to='/sourcecode'><a>Source Code</a></Link>
+                        <Link to='/uses'><a>How to use?</a></Link>
+                        <Link to='/contact'><a>Contact</a></Link>
                     </div>
                     <div>
                         <h3>Support</h3>
