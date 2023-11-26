@@ -153,6 +153,7 @@
   font-weight: 300;
   font-size: larger;
   margin-top: 10px;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0 0 10px black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
