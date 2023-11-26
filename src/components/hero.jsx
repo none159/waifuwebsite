@@ -18,7 +18,7 @@ class Hero extends Component {
                         <div className='right-topsection'>
                             <h2>WaifuTrade</h2>
                             <h3>Increase server economy by trading waifus with you're server members</h3>
-                            <a>INVITE ME</a>
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=1136375211864891432&permissions=8&scope=bot">INVITE ME</a>
                         </div>
                     </div>
                     <div className='about-bot'>
