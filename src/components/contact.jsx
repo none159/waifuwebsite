@@ -1,6 +1,5 @@
 import React, { createRef, Component } from 'react'
 import Nav from './nav';
-import $ from 'jquery'
 import Footer from './footer'
 import emailjs from '@emailjs/browser'
 class Contact extends Component {
