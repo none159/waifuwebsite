@@ -195,6 +195,7 @@
       #ff0000);
   position: absolute;
   top: -2px;
+  text-decoration: none;
   left: -2px;
   background-size: 400%;
   z-index: -1;
